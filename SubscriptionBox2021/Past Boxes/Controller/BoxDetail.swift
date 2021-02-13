@@ -1,20 +1,19 @@
 //
-//  HistoryVC.swift
+//  BoxDetail.swift
 //  SubscriptionBox2021
 //
-//  Created by Adriana González Martínez on 2/11/21.
+//  Created by Adriana González Martínez on 2/13/21.
 //
 
 import UIKit
 
-class HistoryVC: UIViewController {
+class BoxDetail: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(named: "white")
-        self.title = "History"
+        // Do any additional setup after loading the view.
     }
-    
 
     /*
     // MARK: - Navigation

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB6859D225D87A6D002A4E20 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6859D125D87A6D002A4E20 /* Box.swift */; };
+		AB6859D725D87BE0002A4E20 /* BoxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6859D625D87BE0002A4E20 /* BoxCell.swift */; };
+		AB6859E025D88707002A4E20 /* BoxDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6859DF25D88707002A4E20 /* BoxDetail.swift */; };
 		AB7242ED25D6052F00D45B7D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7242EC25D6052F00D45B7D /* TabBarController.swift */; };
 		AB7242F325D6062A00D45B7D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7242F225D6062A00D45B7D /* HomeVC.swift */; };
 		AB7242F625D6064400D45B7D /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7242F525D6064400D45B7D /* HistoryVC.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB6859D125D87A6D002A4E20 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		AB6859D625D87BE0002A4E20 /* BoxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxCell.swift; sourceTree = "<group>"; };
+		AB6859DF25D88707002A4E20 /* BoxDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxDetail.swift; sourceTree = "<group>"; };
 		AB7242EC25D6052F00D45B7D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		AB7242F225D6062A00D45B7D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		AB7242F525D6064400D45B7D /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
@@ -51,6 +57,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB6859D425D87B98002A4E20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB6859D625D87BE0002A4E20 /* BoxCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB6859D525D87B9C002A4E20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB7242F525D6064400D45B7D /* HistoryVC.swift */,
+				AB6859DF25D88707002A4E20 /* BoxDetail.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		AB7242EB25D6051F00D45B7D /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,7 +93,8 @@
 		AB7242F025D605F700D45B7D /* Past Boxes */ = {
 			isa = PBXGroup;
 			children = (
-				AB7242F525D6064400D45B7D /* HistoryVC.swift */,
+				AB6859D525D87B9C002A4E20 /* Controller */,
+				AB6859D425D87B98002A4E20 /* View */,
 			);
 			path = "Past Boxes";
 			sourceTree = "<group>";
@@ -86,6 +110,7 @@
 		AB8E85C225D1E2520077D947 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AB6859D125D87A6D002A4E20 /* Box.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -233,6 +258,8 @@
 			files = (
 				ABDD0C6125C7BEC8004C0EE4 /* OnboardingVC.swift in Sources */,
 				AB7242F925D6065100D45B7D /* NewBoxVC.swift in Sources */,
+				AB6859E025D88707002A4E20 /* BoxDetail.swift in Sources */,
+				AB6859D725D87BE0002A4E20 /* BoxCell.swift in Sources */,
 				AB7242F325D6062A00D45B7D /* HomeVC.swift in Sources */,
 				ABDD0C5D25C7BEC8004C0EE4 /* AppDelegate.swift in Sources */,
 				AB8E85CF25D1E33F0077D947 /* OnboardingPageView.swift in Sources */,
@@ -240,6 +267,7 @@
 				AB7242F625D6064400D45B7D /* HistoryVC.swift in Sources */,
 				ABDD0C5F25C7BEC8004C0EE4 /* SceneDelegate.swift in Sources */,
 				ABAA69A425D4CFB300E2C945 /* LoginVC.swift in Sources */,
+				AB6859D225D87A6D002A4E20 /* Box.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

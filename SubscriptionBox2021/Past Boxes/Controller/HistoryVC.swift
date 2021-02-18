@@ -48,7 +48,7 @@ class HistoryVC: UIViewController {
             arrayBoxes.append(box)
         }
     }
-
+    
 }
 
 extension HistoryVC: UITableViewDelegate, UITableViewDataSource{
@@ -59,7 +59,7 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BoxCell", for: indexPath) as! BoxCell
         let box = arrayBoxes[indexPath.row]
-        cell.dateLabel.text = box.date.description
+        cell.dateLabel.text = box.dateString
         cell.boxImage.image = UIImage(systemName: box.imageStr)
         return cell
     }
@@ -70,6 +70,7 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let boxDetail = BoxDetail()
+        boxDetail.box = arrayBoxes[indexPath.row]
         self.navigationController?.pushViewController(boxDetail, animated: true)
     }
 }

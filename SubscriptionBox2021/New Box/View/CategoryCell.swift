@@ -10,11 +10,10 @@ import UIKit
 class CategoryCell: UICollectionViewCell {
     
     static var identifier: String = "CategoryCell"
-    
     var backView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor(named: "purple")
+        view.backgroundColor = .clear
         return view
     }()
     
@@ -53,7 +52,7 @@ class CategoryCell: UICollectionViewCell {
     func setup(){
         self.contentView.layer.cornerRadius = 10
         self.contentView.layer.masksToBounds = true
-        self.contentView.backgroundColor = UIColor(named: "purple")
+        self.contentView.backgroundColor = UIColor(named: "grey")
         self.contentView.addSubview(backView)
         backView.addSubview(stack)
         stack.addArrangedSubview(imageView)
@@ -82,6 +81,15 @@ class CategoryCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+    }
+  
+    func selectionChanged(selected: Bool){
+        if selected {
+            self.contentView.backgroundColor = UIColor(named: "purple")
+        }else{
+            self.contentView.backgroundColor = UIColor(named: "grey")
+
+        }
     }
     
 }

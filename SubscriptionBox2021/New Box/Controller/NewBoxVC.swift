@@ -14,6 +14,7 @@ class NewBoxVC: UIViewController {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.register(CategoryCell.self, forCellWithReuseIdentifier: CategoryCell.identifier)
         collectionView.backgroundColor = UIColor(named:"white")
+        collectionView.allowsMultipleSelection = true
         return collectionView
     }()
     
@@ -49,6 +50,20 @@ extension NewBoxVC:  UICollectionViewDataSource, UICollectionViewDelegate{
         cell?.setContent(category: category)
         return cell!
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? CategoryCell {
+            cell.selectionChanged(selected: true)
+        }
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? CategoryCell {
+            cell.selectionChanged(selected: false)
+        }
+    }
+
     
 }
 

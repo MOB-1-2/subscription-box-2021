@@ -12,6 +12,13 @@ struct Box{
     var date: Date
     var items: [BoxItem]
     var imageStr: String
+    
+    //Computed property to return date as String
+    var dateString: String{
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM yyy"
+        return formatter.string(from: date)
+    }
 }
 
 struct BoxItem{
@@ -21,12 +28,14 @@ struct BoxItem{
     var isFavorite: Bool
 }
 
-enum Category{
-    case food
-    case treats
-    case meds
-    case clothing
-    case toys
-    case grooming
-    case training
+enum Category: String, CaseIterable{
+    case food = "food"
+    case meds = "medicine"
+    case accessories = "accessories"
+    case toys = "toys"
+    case grooming = "grooming"
+    
+    func displayName() -> String{
+        return self.rawValue.capitalized
+    }
 }

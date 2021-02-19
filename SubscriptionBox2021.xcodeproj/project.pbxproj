@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB5BF8D725DF68CE006D0629 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BF8D625DF68CE006D0629 /* CategoryCell.swift */; };
 		AB6859D225D87A6D002A4E20 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6859D125D87A6D002A4E20 /* Box.swift */; };
 		AB6859D725D87BE0002A4E20 /* BoxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6859D625D87BE0002A4E20 /* BoxCell.swift */; };
 		AB6859E025D88707002A4E20 /* BoxDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6859DF25D88707002A4E20 /* BoxDetail.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB5BF8D625DF68CE006D0629 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		AB6859D125D87A6D002A4E20 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		AB6859D625D87BE0002A4E20 /* BoxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxCell.swift; sourceTree = "<group>"; };
 		AB6859DF25D88707002A4E20 /* BoxDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxDetail.swift; sourceTree = "<group>"; };
@@ -59,6 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB5BF8D425DF68A7006D0629 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB7242F825D6065100D45B7D /* NewBoxVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AB5BF8D525DF68B3006D0629 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB5BF8D625DF68CE006D0629 /* CategoryCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		AB6859D425D87B98002A4E20 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +123,8 @@
 		AB7242F125D605FE00D45B7D /* New Box */ = {
 			isa = PBXGroup;
 			children = (
-				AB7242F825D6065100D45B7D /* NewBoxVC.swift */,
+				AB5BF8D525DF68B3006D0629 /* View */,
+				AB5BF8D425DF68A7006D0629 /* Controller */,
 			);
 			path = "New Box";
 			sourceTree = "<group>";
@@ -262,6 +281,7 @@
 				AB9BDC1725DDF47700D3456F /* ItemCell.swift in Sources */,
 				ABDD0C6125C7BEC8004C0EE4 /* OnboardingVC.swift in Sources */,
 				AB7242F925D6065100D45B7D /* NewBoxVC.swift in Sources */,
+				AB5BF8D725DF68CE006D0629 /* CategoryCell.swift in Sources */,
 				AB6859E025D88707002A4E20 /* BoxDetail.swift in Sources */,
 				AB6859D725D87BE0002A4E20 /* BoxCell.swift in Sources */,
 				AB7242F325D6062A00D45B7D /* HomeVC.swift in Sources */,

@@ -38,10 +38,10 @@ class HistoryVC: UIViewController {
     }
     
     func createData(){
-        let item = BoxItem(name: "Treat", categories: [.food, .treats], description: "Dry treats for training", isFavorite: false)
+        let item = BoxItem(name: "Treat", categories: [.food], description: "Dry treats for training", isFavorite: false)
         let item2 = BoxItem(name: "Ball", categories: [.toys], description: "Ball to play fetch", isFavorite: false)
         let item3 = BoxItem(name: "Kibble", categories: [.food], description: "Chicken and pea", isFavorite: false)
-        let item4 = BoxItem(name: "Leash", categories: [.training], description: "Training leash", isFavorite: false)
+        let item4 = BoxItem(name: "Leash", categories: [.accessories], description: "Training leash", isFavorite: false)
         
         for _ in 0...5{
             let box = Box(date: Date(), items: [item, item2, item3, item4], imageStr: "shippingbox")

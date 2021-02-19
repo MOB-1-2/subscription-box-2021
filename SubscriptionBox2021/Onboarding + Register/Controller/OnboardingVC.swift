@@ -63,7 +63,7 @@ class OnboardingVC: UIViewController {
     func setupPages(){
         let firstPage = OnboardingPageView(message: "Tell us about your pet's personality", imageName: "dog", backgroundColor: UIColor(named: "purple")!, isLastPage: false)
         let secondPage = OnboardingPageView(message: "Subscribe to your first box", imageName: "phone", backgroundColor: UIColor(named: "red")!, isLastPage: false)
-        let thirdPage = OnboardingPageView(message: "Get snacks and toys your pet will love", imageName: "food", backgroundColor: UIColor(named: "light_purple")!, isLastPage: true)
+        let thirdPage = OnboardingPageView(message: "Get snacks and toys your pet will love", imageName: "bowls", backgroundColor: UIColor(named: "light_purple")!, isLastPage: true)
         
         thirdPage.button.addTarget(self, action: #selector(goLogin), for: .touchUpInside)
         

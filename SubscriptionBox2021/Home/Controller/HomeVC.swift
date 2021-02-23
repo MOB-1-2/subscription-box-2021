@@ -14,7 +14,7 @@ class HomeVC: UIViewController {
     lazy var sections: [Section] = [
         TitleSection(title: "Featured Categories"),
         FeaturedSection(),
-        TitleSection(title: "Favorites of last month"),
+        TitleSection(title: "Last Month's Favorites"),
         FavoritesSection()
     ]
     
@@ -25,8 +25,6 @@ class HomeVC: UIViewController {
         }
         return layout
     }()
-    
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +45,7 @@ class HomeVC: UIViewController {
         self.view.addSubview(collectionView)
         collectionView.reloadData()
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         collectionView.reloadData()
@@ -59,15 +58,15 @@ class HomeVC: UIViewController {
 
 extension HomeVC: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        sections.count
+        return sections.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        sections[section].numberOfItems
+        return sections[section].numberOfItems
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        sections[indexPath.section].configureCell(collectionView: collectionView, indexPath: indexPath)
+        return sections[indexPath.section].configureCell(collectionView: collectionView, indexPath: indexPath)
     }
 }
 

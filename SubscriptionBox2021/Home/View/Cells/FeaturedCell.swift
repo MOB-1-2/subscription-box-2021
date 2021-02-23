@@ -10,14 +10,16 @@ import UIKit
 
 class FeaturedCell: UICollectionViewCell {
     static var identifier: String = "FeaturedCell"
+    @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var imgView: UIImageView!
-
+    @IBOutlet weak var mainView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setup()
     }
 
     func setup(){
-        imgView.layer.cornerRadius = 10
+        mainView.layer.cornerRadius = 10
     }
 }

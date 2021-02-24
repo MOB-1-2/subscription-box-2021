@@ -21,5 +21,6 @@ class FeaturedCell: UICollectionViewCell {
 
     func setup(){
         mainView.layer.cornerRadius = 10
+        mainView.layer.backgroundColor = UIColor(named: "white")
     }
 }

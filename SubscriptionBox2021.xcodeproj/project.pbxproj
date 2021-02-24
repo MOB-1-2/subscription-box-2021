@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB423E0625E71F7E00B2F310 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB423E0525E71F7E00B2F310 /* Constants.swift */; };
 		AB5BF8D725DF68CE006D0629 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BF8D625DF68CE006D0629 /* CategoryCell.swift */; };
 		AB6859D225D87A6D002A4E20 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6859D125D87A6D002A4E20 /* Box.swift */; };
 		AB6859D725D87BE0002A4E20 /* BoxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6859D625D87BE0002A4E20 /* BoxCell.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB423E0525E71F7E00B2F310 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AB5BF8D625DF68CE006D0629 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		AB6859D125D87A6D002A4E20 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		AB6859D625D87BE0002A4E20 /* BoxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxCell.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				AB9F840925E4897400AB5175 /* View */,
 				AB9F840825E4896F00AB5175 /* Controller */,
 				AB9F840725E4895900AB5175 /* Sections */,
+				AB423E0525E71F7E00B2F310 /* Constants.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB9F842125E489B300AB5175 /* TitleSection.swift in Sources */,
+				AB423E0625E71F7E00B2F310 /* Constants.swift in Sources */,
 				AB9F840B25E4898500AB5175 /* Section.swift in Sources */,
 				AB9BDC1725DDF47700D3456F /* ItemCell.swift in Sources */,
 				ABDD0C6125C7BEC8004C0EE4 /* OnboardingVC.swift in Sources */,

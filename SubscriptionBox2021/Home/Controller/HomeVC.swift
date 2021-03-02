@@ -9,11 +9,12 @@ import UIKit
 
 class HomeVC: UIViewController {
 
+    let featuredCategories : [Category] = [.accessories, .food, .grooming]
     var collectionView: UICollectionView!
     
     lazy var sections: [Section] = [
         TitleSection(title: "Featured Categories"),
-        FeaturedSection(),
+        FeaturedSection(items: featuredCategories),
         TitleSection(title: "Last Month's Favorites"),
         FavoritesSection()
     ]

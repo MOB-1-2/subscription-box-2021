@@ -11,14 +11,17 @@ import UIKit
 class FavoritesCell: UICollectionViewCell {
     static var identifier: String = "FavoritesCell"
     @IBOutlet weak var imgView: UIImageView!
-    
+
+    @IBOutlet weak var title: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         setup()
     }
     
     func setup(){
-        imgView.layer.cornerRadius = 10
+        //imgView.layer.cornerRadius = 10
+        //title.text = "hello"
     }
     
 }
